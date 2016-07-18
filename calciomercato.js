@@ -4,7 +4,7 @@
 // @version      1.2.1
 // @description  Remove annoying anti adblock content
 // @author       https://github.com/bytecodeguru
-// @updateUrl    https://github.com/bytecodeguru/uscript/blob/develop/calciomercato.js
+// @updateUrl    https://raw.githubusercontent.com/bytecodeguru/uscript/develop/calciomercato.js
 // @include      http://www.calciomercato.com/*
 // @grant        none
 // ==/UserScript==
