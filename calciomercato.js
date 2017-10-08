@@ -7,6 +7,7 @@
 // @updateUrl    https://raw.githubusercontent.com/bytecodeguru/uscript/master/calciomercato.js
 // @include      http://www.calciomercato.com/*
 // @grant        none
+// @run-at       document-idle
 // ==/UserScript==
 
 (function() {
