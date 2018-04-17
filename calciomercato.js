@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Calciomercato adblock
 // @namespace    http://bytecode.guru/
-// @version      1.3.0
+// @version      1.3.1
 // @description  Remove annoying anti adblock content
 // @author       https://github.com/bytecodeguru
 // @updateUrl    https://raw.githubusercontent.com/bytecodeguru/uscript/master/calciomercato.js
@@ -10,7 +10,7 @@
 // @run-at       document-idle
 // ==/UserScript==
 
-hideBlockingElement() {
+function hideBlockingElement() {
     for (i = 0; i <= 9; i++) {
       var blockingElement = document.querySelector('[id^="' + i + '"]');
       if (blockingElement !== null) {
