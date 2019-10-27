@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Calciomercato adblock
 // @namespace    http://bytecode.guru/
-// @version      1.4.0
+// @version      1.5.0
 // @description  Remove annoying anti adblock content
 // @author       https://github.com/bytecodeguru
 // @updateUrl    https://raw.githubusercontent.com/bytecodeguru/uscript/master/calciomercato.js
@@ -11,15 +11,20 @@
 // ==/UserScript==
 
 function hideBlockingElement() {
-    for (var i = 0; i <= 9; i++) {
-      var blockingElement = document.querySelector('[id^="' + i + '"]');
-      if (blockingElement !== null) {
-        document.getElementById(blockingElement.id).style.display = 'none';
-      }
+  for (var i = 0; i <= 9; i++) {
+    var blockingElement = document.querySelector('[id^="' + i + '"]');
+    if (blockingElement !== null) {
+      document.getElementById(blockingElement.id).style.display = 'none';
     }
-    $("div:contains('plugin')").hide();
+  }
+  $("div:contains('plugin')").hide();
+}
+
+function enableScrolling() {
+  document.body.style = "";
 }
 
 (function() {
-    window.setInterval(hideBlockingElement, 1000);
+  window.setInterval(hideBlockingElement, 1000);
+  window.onload = enableScrolling;
 })();
